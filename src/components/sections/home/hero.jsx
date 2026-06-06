@@ -1,144 +1,50 @@
 import React from 'react'
-import FancyButton from '@/components/custom-ui/fancy-button';
-
-const QubyStandingSVG = (props) => (
-    <svg
-        width={720}
-        height={720}
-        viewBox="0 0 720 720"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        {...props}
-    >
-        <path
-            d="M359.991 153.078c-52.753 49.619-91.926 117.519-48.575 172.884-87.748-26.116-113.863 7.312-54.32 42.306-28.134 6.774-44.257 8.809-70.511 25.071-8.149-14.52-16.715-24.436-25.071-30.224-11.583-8.023-22.761-8.113-31.861-1.537-3.466 2.505-6.63 5.977-9.401 10.347-27.16 42.829-1.045 136.614 43.874 111.251 1.044 5.745 7.312 16.714 9.923 20.37-74.184 7.004-148.984 8.879-141.545 48.052 9.028 47.53 136.322 70.511 222.503 36.561 150.947 86.703 249.662-46.485 269.51-142.067 82.525 4.179 101.328-48.574 121.698-121.175 56.409 4.701 53.797-57.454 3.656-59.021-21.415-99.238-149.38-160.348-234.516-143.112-20.892-38.128-80.957-17.236-55.364 30.294"
-            fill="#704730"
-        />
-        <path
-            d="M386.628 514.514C343.285 552 273.986 548.92 240.382 502.501c-83.358-115.148 169.703-190.308 193.254-96.104 5.745 22.981-8.357 74.69-47.008 108.117"
-            fill="#ecdcc9"
-        />
-        <path
-            d="M524.517 440.869c-54.241-8.564-171.839-63.199-213.101-123.264-41.262-60.066-10.916-80.605 0-112.154 49.612 1.197 66.004 15.32 89.837 46.865 67.278-3.554 98.488 2.974 115.429 65.289 54.545 8.846 81.793 17.933 108.183 61.632-8.422 37.084-50.729 69.467-100.348 61.632"
-            fill="#ffefdb"
-        />
-        <path
-            d="M646.5 286.5c.178 13.972-1.593 22.661-5.5 38.5 28.566-.471 41.18-4.345 46-30-10-10-28.593-12.906-40.5-8.5M400 128c-16.062 11.034-24.512 17.935-39 31-7.3-16.939-8.889-26.737-1-45.5 22-3 32.5 3 40 14.5"
-            fill="#361609"
-        />
-        <path
-            d="M174.049 503.546c-74.184 7.004-148.984 8.879-141.545 48.052 9.028 47.53 136.322 70.511 222.503 36.561 150.947 86.703 249.662-46.485 269.51-142.067 82.525 4.179 101.328-48.574 121.698-121.175 56.409 4.701 53.797-57.454 3.656-59.021-21.415-99.238-149.38-160.348-234.516-143.112-20.892-38.128-80.957-17.236-55.364 30.294-52.753 49.619-91.926 117.519-48.575 172.884-17.758-4.179-78.868-19.848-86.181 0-10.468 28.413 24.027 34.472 31.861 42.306-28.134 6.774-44.257 8.809-70.511 25.071m-25.071-30.224c-11.583-8.023-22.761-8.113-31.861-1.537-3.466 2.505-6.63 5.977-9.401 10.347-27.16 42.829-1.045 136.614 43.874 111.251 1.044 5.745 7.312 16.714 9.923 20.37m0 0h16.192m-3.656-110.207c2.611 9.924 2.089 44.918-6.268 54.842m6.268-54.842c-8.149-14.52-16.715-24.436-25.071-30.224m0 0c-4.199 8.162-6.392 13.044-9.401 23.434m-22.46-24.971 1.567 23.706"
-            stroke="#000"
-            strokeWidth={10}
-            strokeLinecap="round"
-        />
-        <path
-            d="M258.232 508.699c-11.932 21.372-17.316 45.377 0 62.677 20.723 20.703 55.251 6.495 73.123-16.714 11.153-14.484 16.645-34.315 13.489-51.038-2.104-11.143-8.046-20.905-18.712-26.786-25.651-14.142-53.621 6.287-67.9 31.861"
-            fill="#704730"
-        />
-        <path
-            d="M326.132 476.838c-25.651-14.142-53.621 6.287-67.9 31.861-11.932 21.372-17.316 45.377 0 62.677 20.723 20.703 55.251 6.495 73.123-16.714 11.153-14.484 16.645-34.315 13.489-51.038m-18.712-26.786c-9.515 5.748-14.733 8.997-19.939 15.739m19.939-15.739c10.666 5.881 16.608 15.643 18.712 26.786m0 0c-9.378-.308-14.422-1.897-25.071 6.189"
-            stroke="#000"
-            strokeWidth={10}
-            strokeLinecap="round"
-        />
-        <ellipse
-            cx={345.742}
-            cy={288.692}
-            rx={31.653}
-            ry={20.306}
-            transform="rotate(21.857 345.742 288.692)"
-            fill="#ffd6c9"
-        />
-        <rect
-            x={223.217}
-            y={305.345}
-            width={169.062}
-            height={169.062}
-            rx={29}
-            transform="rotate(-7.883 223.217 305.345)"
-            fill="#2b2b2b"
-        />
-        <path
-            d="M306.134 444.806c11.914-1.65 20.252-12.601 18.612-24.445l-2.971-21.457-21.583 2.989c-11.914 1.649-20.252 12.601-18.612 24.444 1.64 11.844 12.64 20.118 24.554 18.469"
-            fill="#0acf83"
-        />
-        <path
-            d="M275.638 383.425c-1.64-11.844 6.699-22.796 18.612-24.445l21.583-2.989 5.942 42.913-21.583 2.989c-11.914 1.649-22.914-6.624-24.554-18.468"
-            fill="#a259ff"
-        />
-        <path
-            d="M269.697 340.512c-1.64-11.844 6.698-22.796 18.612-24.445l21.583-2.988 5.941 42.912-21.583 2.989c-11.913 1.649-22.913-6.624-24.553-18.468"
-            fill="#f24e1e"
-        />
-        <path
-            d="m309.892 313.079 21.583-2.989c11.913-1.649 22.913 6.624 24.553 18.468s-6.698 22.796-18.612 24.445l-21.583 2.988z"
-            fill="#ff7262"
-        />
-        <path
-            d="M361.97 371.471c1.64 11.844-6.698 22.795-18.612 24.445s-22.914-6.624-24.554-18.468 6.698-22.795 18.612-24.445 22.914 6.624 24.554 18.468"
-            fill="#1abcfe"
-        />
-        <path
-            d="M421.1 401.48c28.976-3.245 43.391 36.935 46.486 49.313l-41.263 40.74c-16.302-7.904-47.859-59.462-26.637-80.304a24 24 0 0 1 4.178-3.265c6.238-3.876 11.977-5.896 17.236-6.484"
-            fill="#704730"
-        />
-        <path
-            d="M467.586 450.793c-3.095-12.378-17.51-52.558-46.486-49.313m5.223 90.053c-16.302-7.904-47.859-59.462-26.637-80.304m21.414-9.749c-5.259.588-10.998 2.608-17.236 6.484a24 24 0 0 0-4.178 3.265m21.414-9.749 12.536 17.974m-33.95-8.225 12.535 17.105"
-            stroke="#000"
-            strokeWidth={10}
-            strokeLinecap="round"
-        />
-        <circle cx={392.373} cy={248.66} r={21.937} fill="#000" />
-        <circle cx={533.396} cy={328.051} r={21.937} fill="#000" />
-        <path
-            d="M433.095 290.262c4.168-10.181 16.953-11.096 27.238-7.19 11.969 4.545 22.208 18.97 14.67 29.319-6.484 8.904-18.439 7.25-28.132 2.018-9.554-5.156-17.888-14.099-13.776-24.147"
-            fill="#000"
-        />
-        <path
-            d="M446.871 314.409c-9.554-5.156-17.888-14.099-13.776-24.147 4.168-10.181 16.953-11.096 27.238-7.19 11.969 4.545 22.208 18.97 14.67 29.319-6.484 8.904-18.439 7.25-28.132 2.018Zm0 0-6.967 12.597m0 0c9.401 15.669 20.429 17.236 33.949 14.625m-33.949-14.625c-15.67 3.134-28.205-4.701-31.339-18.803"
-            stroke="#000"
-            strokeWidth={10}
-            strokeLinecap="round"
-        />
-        <circle cx={527.129} cy={325.962} r={5.223} fill="#fff" />
-        <circle cx={396.552} cy={252.839} r={5.223} fill="#fff" />
-        <ellipse
-            cx={522.282}
-            cy={383.752}
-            rx={31.653}
-            ry={20.306}
-            transform="rotate(21.857 522.282 383.752)"
-            fill="#ffd6c9"
-        />
-    </svg>
-);
+import MagneticButton from '@/components/custom-ui/magnetic-button';
+import Image from 'next/image';
+import VideoPlayer from '@/components/custom-ui/video-player';
 
 export default function Hero() {
     return (
-        <div className="flex items-center justify-center">
-            <div>
-                <h2 className="uppercase text-muted-foreground">
-                    helped <span className="text-foreground">50+</span> founders raise{" "}
-                    <span className="text-foreground">$200M+</span>
-                </h2>
+        <div className="max-w-165">
 
-                <p className="text-[34px] max-md:max-w-full max-md:text-center lg:text-[56px] leading-[119%] font-bold tracking-[-0.04em] mt-8">
-                    The{" "}
-                    <QubyStandingSVG className="inline-block size-16 relative bottom-2" />
-                    {" "}studio <span className="text-muted-foreground">for brands</span>
-                    <br className="hidden md:inline" />
-                    <span className="text-muted-foreground">who simply</span> can't afford to
-                    <br className="hidden md:inline" />
-                    be average
-                </p>
+            <h2 className="uppercase text-muted-foreground text-sm text-center md:text-left">
+                helped{" "} <span className="text-foreground">50+</span> {" "}founders raise{" "}
+                <span className="text-foreground">$200M+</span>
+            </h2>
 
-                <div className='mt-8'>
-                    <FancyButton>
-                        Book a Call Now
-                    </FancyButton>
-                </div>
+            <p className='text-[2.125rem] md:text-[2.5rem] leading-[119%] font-bold tracking-[-0.04em] mt-8 wrap-break-word text-center md:text-left'>
+                The{" "} <Image src="/otter-figma.svg" alt="otter-figma" width={64} height={64} className="inline-block size-10 lg:size-16 relative bottom-1 lg:bottom-2" /> {" "}studio{" "} <span className="text-muted-foreground">for brands who simply</span> {" "}can't afford to be average.
+            </p>
+
+            <div className='mt-8 flex flex-wrap items-center justify-center md:justify-start gap-4'>
+                <MagneticButton className="flex items-center justify-center gap-3">
+                    <Image
+                        src="/icons/gmeet.svg"
+                        alt="gmeet"
+                        width={24}
+                        height={24}
+                        className="size-6"
+                    />
+                    <span>Book a call</span>
+                </MagneticButton>
+                <MagneticButton className="flex items-center justify-center gap-3">
+                    <Image
+                        src="/icons/folder.svg"
+                        alt="folder"
+                        width={24}
+                        height={24}
+                        className="size-6"
+                    />
+                    <span>See Works</span>
+                </MagneticButton>
             </div>
+
+            <div className='mt-16 w-full'>
+                <VideoPlayer
+                    url="https://kree8.b-cdn.net/KREE8%20MOTION%20part%202K_20-01-26%20v3_3.mp4"
+                />
+            </div>
+
         </div>
     )
 }
