@@ -87,7 +87,7 @@ export default function About() {
                         </Marquee>
                     </div>
 
-                    <div className='absolute w-[150%] top-[10%] -left-[50%] -rotate-[75deg] z-1'>
+                    <div className='absolute w-[250%] top-[10%] -left-[100%] -rotate-[75deg] z-1'>
                         <Marquee className='py-3 bg-[#facc15] border-y-4 border-black shadow-2xl'>
                             {shuffleArray([...headaches]).map((item, i) => (
                                 <div key={i} className='mx-6 flex items-center gap-6 text-xl md:text-2xl font-black text-black uppercase tracking-widest'>
@@ -117,7 +117,7 @@ export default function About() {
                 </div>
 
                 <p className='mt-8'>
-                    ... and then <RoughNotation type="highlight" color="#ef4444" className="text-white">YOU QUIT!</RoughNotation>
+                    ... and then <RoughNotation type="highlight" color="#ef4444" className="text-white px-2">YOU QUIT!</RoughNotation>
                 </p>
             </div>
         </RoughNotationGroup>
