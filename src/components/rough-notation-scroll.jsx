@@ -1,0 +1,38 @@
+'use client'
+
+import { useEffect, useRef, useState } from 'react'
+import { RoughNotation } from 'react-rough-notation'
+
+const useInView = (options = {}) => {
+    const ref = useRef(null)
+    const [isInView, setIsInView] = useState(false)
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                setIsInView(true)
+                observer.unobserve(entry.target)
+            }
+        }, { threshold: 0.1, ...options })
+
+        if (ref.current) {
+            observer.observe(ref.current)
+        }
+
+        return () => observer.disconnect()
+    }, [options])
+
+    return [ref, isInView]
+}
+
+export function RoughNotationScroll({ children, ...props }) {
+    const [ref, isInView] = useInView()
+
+    return (
+        <span ref={ref}>
+            <RoughNotation show={isInView} {...props}>
+                {children}
+            </RoughNotation>
+        </span>
+    )
+}
