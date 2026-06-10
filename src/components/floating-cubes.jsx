@@ -92,7 +92,7 @@ export default function FloatingCubes() {
                     p.angle += p.dAngle;
 
                     const currentSpeed = Math.hypot(p.dx, p.dy);
-                    const targetSpeed = 1.2;
+                    const targetSpeed = 0.6;
 
                     if (currentSpeed > targetSpeed) {
                         p.dx *= 0.96;

@@ -64,7 +64,7 @@ export default function Problem() {
                     </Marquee>
                 </div>
 
-                <div className='absolute w-[150%] bottom-[12%] -left-[25%] -rotate-[6deg] z-0'>
+                <div className='absolute w-[150%] bottom-[12%] -left-[25%] -rotate-[6deg] z-21'>
                     <Marquee className='py-3 bg-[#facc15] border-y-4 border-black shadow-2xl'>
                         {shuffleArray([...headaches]).map((item, i) => (
                             <div key={i} className='mx-6 flex items-center gap-6 text-xl md:text-2xl font-black text-black uppercase tracking-widest'>
@@ -74,28 +74,6 @@ export default function Problem() {
                         ))}
                     </Marquee>
                 </div>
-
-                {/* <div className='absolute w-[150%] top-[5%] -left-[25%] rotate-[45deg] z-10'>
-                    <Marquee className='py-3 bg-[#facc15] border-y-4 border-black shadow-2xl'>
-                        {shuffleArray([...headaches]).map((item, i) => (
-                            <div key={i} className='mx-6 flex items-center gap-6 text-xl md:text-2xl font-black text-black uppercase tracking-widest'>
-                                <span>🛑</span>
-                                {item}
-                            </div>
-                        ))}
-                    </Marquee>
-                </div> */}
-
-                {/* <div className='absolute w-[250%] top-[10%] -left-[100%] -rotate-[75deg] z-1'>
-                    <Marquee className='py-3 bg-[#facc15] border-y-4 border-black shadow-2xl'>
-                        {shuffleArray([...headaches]).map((item, i) => (
-                            <div key={i} className='mx-6 flex items-center gap-6 text-xl md:text-2xl font-black text-black uppercase tracking-widest'>
-                                <span>🔥</span>
-                                {item}
-                            </div>
-                        ))}
-                    </Marquee>
-                </div> */}
 
                 <div className='absolute inset-0 flex justify-center items-center pointer-events-none z-20'>
                     <div className="relative">
