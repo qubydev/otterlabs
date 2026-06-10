@@ -82,7 +82,7 @@ export default function Gallary() {
     }, []);
 
     return (
-        <div className="w-full mt-8 overflow-hidden flex justify-center">
+        <div className="w-full mt-8 overflow-hidden flex justify-center relative">
             <div className='relative w-full min-w-[600px] max-w-[1620px]'>
                 <Image
                     src='/gallary.png'
@@ -159,6 +159,9 @@ export default function Gallary() {
                     </div>
                 )}
             </div>
+
+            <div className="absolute top-0 bottom-0 left-0 w-12 sm:w-24 md:w-32 bg-gradient-to-r from-background to-transparent z-20 pointer-events-none min-[600px]:hidden" />
+            <div className="absolute top-0 bottom-0 right-0 w-12 sm:w-24 md:w-32 bg-gradient-to-l from-background to-transparent z-20 pointer-events-none min-[600px]:hidden" />
         </div>
     );
 }

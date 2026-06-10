@@ -6,14 +6,13 @@ import VideoPlayer from '@/components/custom-ui/video-player';
 export default function Hero() {
     return (
         <div className="max-w-165">
-
             <h2 className="uppercase text-muted-foreground text-sm text-center md:text-left">
-                helped{" "} <span className="text-foreground">50+</span> {" "}founders raise{" "}
-                <span className="text-foreground">$200M+</span>
+                shipping in{" "} <span className="text-foreground">weeks</span> {" "}, not{" "}
+                <span className="text-foreground">months</span>
             </h2>
 
-            <p className='text-[2.125rem] md:text-[2.5rem] leading-[119%] font-bold tracking-[-0.04em] mt-8 wrap-break-word text-center md:text-left'>
-                The{" "} <Image src="/otter-figma.svg" alt="otter-figma" width={64} height={64} className="inline-block size-10 lg:size-16 relative bottom-1 lg:bottom-2" /> {" "}studio{" "} <span className="text-muted-foreground">for brands who simply</span> {" "}can't afford to be average.
+            <p className="text-[2.125rem] md:text-[2.5rem] leading-[119%] font-bold tracking-[-0.04em] mt-8 wrap-break-word text-center md:text-left">
+                The <Image src="/otter-figma.svg" alt="otter-figma" width={64} height={64} className="inline-block size-10 lg:size-16 relative bottom-1 lg:bottom-2 mx-2" /> studio <span className="text-muted-foreground">turning great ideas into</span> live products.
             </p>
 
             <div className='mt-8 flex flex-wrap items-center justify-center md:justify-start gap-4'>

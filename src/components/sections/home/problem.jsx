@@ -32,7 +32,7 @@ export default function Problem() {
             <p>
                 We know, It always starts the same way. <br />
                 You're out for a quiet walk, or maybe you're just staring at the ceiling at 2 AM.<br />
-                Suddenly, it hits you... <RoughNotationScroll type="circle" color="#22c55e" strokeWidth={3}><span className='italic font-black'>The Idea.</span></RoughNotationScroll><br />
+                Suddenly, it hits you... <RoughNotationScroll type="circle" color="#56ef15" strokeWidth={3}><span className='italic font-black'>The Idea.</span></RoughNotationScroll><br />
                 The one you absolutely have to build.
             </p>
 
@@ -116,7 +116,7 @@ export default function Problem() {
             </div>
 
             <p className='mt-8'>
-                ... and then <RoughNotationScroll type="highlight" color="#ef4444" className="text-white px-2">YOU QUIT!</RoughNotationScroll>
+                ... and then <RoughNotationScroll type="highlight" color="#FF000066" className="px-2 text-white">YOU QUIT!</RoughNotationScroll>
             </p>
         </div>
     )
