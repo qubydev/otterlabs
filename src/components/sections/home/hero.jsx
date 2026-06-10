@@ -12,7 +12,7 @@ export default function Hero() {
             </h2>
 
             <p className="text-[2.125rem] md:text-[2.5rem] leading-[119%] font-bold tracking-[-0.04em] mt-8 wrap-break-word text-center md:text-left">
-                The <Image src="/otter-figma.svg" alt="otter-figma" width={64} height={64} className="inline-block size-10 lg:size-16 relative bottom-1 lg:bottom-2 mx-2" /> studio <span className="text-muted-foreground">turning great ideas into</span> live products.
+                The <Image src="/otter-figma.svg" alt="otter-figma" width={64} height={64} className="inline-block size-10 lg:size-16 relative bottom-1 lg:bottom-2" /> studio <span className="text-muted-foreground">turning great ideas into</span> live products.
             </p>
 
             <div className='mt-8 flex flex-wrap items-center justify-center md:justify-start gap-4'>
