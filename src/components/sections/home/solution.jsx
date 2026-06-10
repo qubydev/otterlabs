@@ -65,6 +65,10 @@ export default function Solution() {
             </div>
 
             <p className='mt-8'>
+                Whether it's a full-stack web app, SaaS platform, AI-powered product, mobile application, e-commerce store, or custom software, we got you.
+            </p>
+
+            <p className='mt-8'>
                 Alright, enough talking. Let's take action...
             </p>
 
@@ -75,8 +79,9 @@ export default function Solution() {
             </p>
 
             <p className='mt-8'>
-                Whether it's a full-stack web app, SaaS platform, AI-powered product, mobile application, e-commerce store, or custom software, you're just one decision away from <RoughNotationScroll type="highlight" color="#56ef1555" className="px-2">making it real</RoughNotationScroll> ✨
+                You're just one decision away from <RoughNotationScroll type="highlight" color="#56ef1555" className="px-2">making it real</RoughNotationScroll> ✨
             </p>
+
         </div>
     );
 }

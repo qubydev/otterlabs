@@ -9,7 +9,7 @@ export default function FloatingCubes() {
         const canvas = canvasRef.current;
         const ctx = canvas.getContext('2d');
         let animationFrameId;
-        let currentSize = 140;
+        let currentSize = 120;
         let particles = [];
 
         const resizeCanvas = () => {
@@ -44,8 +44,8 @@ export default function FloatingCubes() {
                 img,
                 x: Math.random() * Math.max(10, canvas.width - currentSize * 1.5),
                 y: Math.random() * Math.max(10, canvas.height - currentSize * 1.5),
-                dx: (Math.random() - 0.5) * 0.8,
-                dy: (Math.random() - 0.5) * 0.8,
+                dx: (Math.random() - 0.5) * 0.6,
+                dy: (Math.random() - 0.5) * 0.6,
                 angle: Math.random() * Math.PI * 2,
                 dAngle: (Math.random() - 0.5) * 0.008
             };
