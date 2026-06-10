@@ -40,7 +40,7 @@ export default function Hero() {
 
             <div className='mt-16 w-full'>
                 <VideoPlayer
-                    url="https://kree8.b-cdn.net/KREE8%20MOTION%20part%202K_20-01-26%20v3_3.mp4"
+                    url="/demo-video.mp4"
                 />
             </div>
 
