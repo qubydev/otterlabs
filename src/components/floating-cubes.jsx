@@ -9,14 +9,14 @@ export default function FloatingCubes() {
         const canvas = canvasRef.current;
         const ctx = canvas.getContext('2d');
         let animationFrameId;
-        let currentSize = 120;
+        let currentSize = 100;
         let particles = [];
 
         const resizeCanvas = () => {
             const rect = canvas.parentElement.getBoundingClientRect();
             canvas.width = rect.width;
             canvas.height = rect.height;
-            currentSize = window.innerWidth < 640 ? 72 : (window.innerWidth < 1024 ? 100 : 140);
+            currentSize = window.innerWidth < 640 ? 72 : 100;
         };
 
         resizeCanvas();

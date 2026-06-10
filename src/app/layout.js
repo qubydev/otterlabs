@@ -8,7 +8,7 @@ const nunito = Nunito({
 });
 
 export const metadata = {
-  title: "OTTERLABS - A Creative Agency",
+  title: "Otter Labs - Your MVP Agency",
   description: "A team of Qubies building your mvp in weeks, not months.",
 };
 
