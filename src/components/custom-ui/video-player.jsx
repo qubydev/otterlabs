@@ -106,6 +106,9 @@ export default function VideoPlayer({ url }) {
                                 ring-1
                                 ring-white/5
                             "
+                            style={{
+                                boxShadow: "inset 0px 7px 32px rgb(255 255 255);"
+                            }}
                         >
                             {isPlaying ? (
                                 <Pause className="w-8 h-8 md:w-12 md:h-12 text-white fill-white" />
