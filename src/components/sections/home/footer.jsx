@@ -18,7 +18,7 @@ export default function Footer() {
             <div className='absolute inset-y-0 right-0 w-32 md:w-64 pointer-events-none z-10' style={{ background: 'linear-gradient(to left, var(--background), transparent)' }} />
 
             <div className='absolute inset-x-0 top-0 bottom-1/2 z-20 flex flex-col items-center justify-end gap-3 pb-6'>
-                <MagneticButton>
+                <MagneticButton className="mb-4">
                     <Image
                         src="/icons/telegram.svg"
                         alt="Telegram"
