@@ -107,7 +107,7 @@ export default function VideoPlayer({ url }) {
                                 ring-white/5
                             "
                             style={{
-                                boxShadow: "inset 0px 7px 32px rgb(255 255 255);"
+                                boxShadow: "inset 0px 7px 32px rgb(255 255 255)"
                             }}
                         >
                             {isPlaying ? (
