@@ -3,6 +3,7 @@ import LinedHeading from '@/components/lined-heading'
 import { Marquee } from '@/components/ui/marquee'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Star } from 'lucide-react'
+import MagneticCard from '@/components/custom-ui/magnetic-card'
 
 const testimonialsRowOne = [
     {
@@ -54,9 +55,9 @@ export default function Love() {
             <div className='relative my-10 hidden md:flex w-full overflow-hidden flex-col gap-4 rounded-xl'>
                 <Marquee pauseOnHover className="[--duration:35s]">
                     {testimonialsRowOne.map((review, i) => (
-                        <div
+                        <MagneticCard
                             key={i}
-                            className="relative w-80 cursor-pointer rounded-2xl border border-border bg-card p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+                            className="relative w-80 h-64 cursor-pointer rounded-2xl border border-border bg-card p-6 flex flex-col"
                         >
                             <div className="flex flex-row items-center gap-4 mb-4">
                                 <Avatar className="h-12 w-12 border border-border">
@@ -79,18 +80,18 @@ export default function Love() {
                                     </div>
                                 </div>
                             </div>
-                            <blockquote className="text-base text-foreground leading-relaxed font-thin italic font-sans">
+                            <blockquote className="text-base text-foreground leading-relaxed font-thin italic font-sans line-clamp-4">
                                 "{review.body}"
                             </blockquote>
-                        </div>
+                        </MagneticCard>
                     ))}
                 </Marquee>
 
                 <Marquee reverse pauseOnHover className="[--duration:40s]">
                     {testimonialsRowTwo.map((review, i) => (
-                        <div
+                        <MagneticCard
                             key={i}
-                            className="relative w-80 cursor-pointer rounded-2xl border border-border bg-card p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+                            className="relative w-80 h-64 cursor-pointer rounded-2xl border border-border bg-card p-6 flex flex-col"
                         >
                             <div className="flex flex-row items-center gap-4 mb-4">
                                 <Avatar className="h-12 w-12 border border-border">
@@ -113,10 +114,10 @@ export default function Love() {
                                     </div>
                                 </div>
                             </div>
-                            <blockquote className="text-base text-foreground leading-relaxed font-thin italic font-sans">
+                            <blockquote className="text-base text-foreground leading-relaxed font-thin italic font-sans line-clamp-4">
                                 "{review.body}"
                             </blockquote>
-                        </div>
+                        </MagneticCard>
                     ))}
                 </Marquee>
 
@@ -127,9 +128,9 @@ export default function Love() {
             <div className='relative my-10 flex md:hidden w-full h-[500px] overflow-hidden flex-row justify-center rounded-xl'>
                 <Marquee vertical pauseOnHover className="[--duration:40s] w-full px-2">
                     {[...testimonialsRowOne, ...testimonialsRowTwo].map((review, i) => (
-                        <div
+                        <MagneticCard
                             key={i}
-                            className="relative w-full cursor-pointer rounded-2xl border border-border bg-card p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+                            className="relative w-full h-64 cursor-pointer rounded-2xl border border-border bg-card p-6 flex flex-col"
                         >
                             <div className="flex flex-row items-center gap-4 mb-4">
                                 <Avatar className="h-12 w-12 border border-border">
@@ -152,10 +153,10 @@ export default function Love() {
                                     </div>
                                 </div>
                             </div>
-                            <blockquote className="text-sm text-foreground leading-relaxed font-thin italic font-sans">
+                            <blockquote className="text-sm text-foreground leading-relaxed font-thin italic font-sans line-clamp-4">
                                 "{review.body}"
                             </blockquote>
-                        </div>
+                        </MagneticCard>
                     ))}
                 </Marquee>
 
