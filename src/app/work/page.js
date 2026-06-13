@@ -106,7 +106,7 @@ export default function Page() {
 
     const getGridClass = () => {
         if (activeTab === "websites") return "grid grid-cols-1";
-        if (activeTab === "illustrations") return "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3";
+        if (activeTab === "illustrations") return "grid grid-cols-1 md:grid-cols-2";
         if (activeTab === "branding") return "grid grid-cols-1 md:grid-cols-2";
         return "grid grid-cols-1";
     };
@@ -180,7 +180,7 @@ export default function Page() {
 
     return (
         <div className="w-full bg-background">
-            <div className="max-w-240 mx-auto px-4 py-8 md:py-12">
+            <div className="max-w-200 mx-auto px-4 py-8 md:py-12">
                 <div className="flex flex-wrap gap-3 mb-12">
                     {Object.keys(WORK).map((service) => (
                         <MagneticButton
