@@ -1,47 +1,43 @@
 "use client";
 import React from 'react';
 import MagneticButton from '@/components/custom-ui/magnetic-button';
+import { ArrowUpRight } from 'lucide-react';
 
 const WORK = {
     "websites": [
         {
-            name: "Project 1",
             img: "/projects/project.png",
+            link: "https://example.com",
         },
         {
-            name: "Project 2",
             img: "/projects/project.png",
+            link: "https://example.com",
         },
         {
-            name: "Project 3",
             img: "/projects/project.png",
+            link: "https://example.com",
         },
         {
-            name: "Project 4",
             img: "/projects/project.png",
+            link: "https://example.com",
         },
     ],
     "illustrations": [
         {
-            name: "Project 1",
             img: "/illustrations/illustration.png",
         },
         {
-            name: "Project 2",
             img: "/illustrations/illustration.png",
         },
         {
-            name: "Project 3",
             img: "/illustrations/illustration.png",
         },
         {
-            name: "Project 4",
             img: "/illustrations/illustration.png",
         },
     ],
     "branding": [
         {
-            name: "Brand 1",
             colors: [
                 { hex: "#000000" },
                 { hex: "#FFFFFF" },
@@ -58,7 +54,6 @@ const WORK = {
             ]
         },
         {
-            name: "Brand 2",
             colors: [
                 { hex: "#FF6B6B" },
                 { hex: "#4ECDC4" },
@@ -75,7 +70,6 @@ const WORK = {
             ]
         },
         {
-            name: "Brand 3",
             colors: [
                 { hex: "#667EEA" },
                 { hex: "#764BA2" },
@@ -96,6 +90,7 @@ const WORK = {
 
 export default function Page() {
     const [activeTab, setActiveTab] = React.useState("websites");
+    const [hoveredProject, setHoveredProject] = React.useState(null);
 
     React.useEffect(() => {
         const link = document.createElement('link');
@@ -165,13 +160,24 @@ export default function Page() {
                 {WORK[activeTab].map((project, idx) => (
                     <div
                         key={idx}
-                        className="bg-card p-4 rounded-xl shadow-md"
+                        className="bg-card p-4 rounded-xl shadow-md relative overflow-hidden group"
+                        onMouseEnter={() => setHoveredProject(idx)}
+                        onMouseLeave={() => setHoveredProject(null)}
                     >
                         <img
                             src={project.img}
-                            alt={project.name}
+                            alt="Project"
                             className="w-full h-auto rounded-lg"
                         />
+
+                        {project.link && (
+                            <button
+                                onClick={() => window.open(project.link, '_blank')}
+                                className="absolute -bottom-4 -right-4 w-16 h-16 lg:w-32 lg:h-32 lg:-bottom-8 lg:-right-8 rounded-full bg-primary flex items-center justify-center cursor-pointer scale-100 lg:scale-0 lg:group-hover:scale-100 transition-transform duration-300 ease-bounce"
+                            >
+                                <ArrowUpRight className="w-5 h-5 lg:w-8 lg:h-8 text-primary-foreground" />
+                            </button>
+                        )}
                     </div>
                 ))}
             </div>

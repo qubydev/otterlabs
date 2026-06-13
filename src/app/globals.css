@@ -129,3 +129,9 @@
     0px 31.8px 12.55px rgba(181, 187, 203, 0.05),
     0px 50.2px 14.23px rgba(181, 193, 203, 0.01);
 }
+
+@layer utilities {
+  .ease-bounce {
+    transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+}
