@@ -2,6 +2,7 @@
 import React from 'react';
 import MagneticButton from '@/components/custom-ui/magnetic-button';
 import { ArrowUpRight } from 'lucide-react';
+import Image from 'next/image';
 
 const WORK = {
     "websites": [
@@ -127,10 +128,12 @@ export default function Page() {
 
                                 <div className="col-span-1">
                                     <div className="aspect-square rounded-lg bg-muted shadow-md overflow-hidden">
-                                        <img
+                                        <Image
                                             src={brand.logo}
                                             alt="Logo"
                                             className="w-full h-full object-cover"
+                                            width={512}
+                                            height={512}
                                         />
                                     </div>
                                 </div>
@@ -155,6 +158,8 @@ export default function Page() {
             );
         }
 
+        const isIllustration = activeTab === "illustrations";
+
         return (
             <div className={getGridClass() + " gap-6 lg:gap-8"}>
                 {WORK[activeTab].map((project, idx) => (
@@ -164,10 +169,12 @@ export default function Page() {
                         onMouseEnter={() => setHoveredProject(idx)}
                         onMouseLeave={() => setHoveredProject(null)}
                     >
-                        <img
+                        <Image
                             src={project.img}
                             alt="Project"
-                            className="w-full h-auto rounded-lg"
+                            className={isIllustration ? "w-full aspect-square object-cover rounded-lg" : "w-full h-auto rounded-lg"}
+                            width={isIllustration ? 800 : 1600}
+                            height={isIllustration ? 800 : 900}
                         />
 
                         {project.link && (
