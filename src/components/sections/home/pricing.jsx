@@ -88,12 +88,7 @@ export default function Pricing() {
                     <MagneticButton
                         key={service.id}
                         onClick={() => setActiveTab(service.id)}
-                        className={cn(
-                            "transition-all duration-300 px-4 py-2 text-sm md:text-base rounded-full",
-                            activeTab === service.id
-                                ? "bg-primary text-primary-foreground shadow-md"
-                                : "bg-muted hover:bg-muted/80"
-                        )}
+                        className={activeTab === service.id ? 'bg-primary text-primary-foreground' : ''}
                     >
                         {service.label}
                     </MagneticButton>

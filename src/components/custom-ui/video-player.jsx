@@ -113,7 +113,7 @@ export default function VideoPlayer({ url }) {
                             {isPlaying ? (
                                 <Pause className="w-8 h-8 md:w-12 md:h-12 text-white fill-white" />
                             ) : (
-                                <Play className="w-8 h-8 md:w-12 md:h-12 text-white fill-white translate-x-1" />
+                                <Play className="w-8 h-8 md:w-12 md:h-12 text-white fill-white" />
                             )}
                         </MagneticButton>
                     </div>
