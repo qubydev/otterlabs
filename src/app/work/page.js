@@ -1,8 +1,9 @@
 "use client";
 import React from 'react';
 import MagneticButton from '@/components/custom-ui/magnetic-button';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowLeft, ArrowUpRight } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const WORK = {
     "websites": [
@@ -195,6 +196,12 @@ export default function Page() {
         <div className="w-full bg-background">
             <div className="max-w-200 mx-auto px-4 py-8 md:py-12">
                 <div className="flex flex-wrap gap-3 mb-12">
+                    <Link href="/">
+                        <MagneticButton className="p-4!">
+                            <ArrowLeft />
+                        </MagneticButton>
+                    </Link>
+
                     {Object.keys(WORK).map((service) => (
                         <MagneticButton
                             key={service}
